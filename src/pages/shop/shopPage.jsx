@@ -6,6 +6,10 @@ import { useNavigate } from 'react-router-dom';
 import { Images } from '../../constant';
 import { MyAppContext } from '../../context';
 
+const formatPrice = (price) => {
+  return new Intl.NumberFormat('en-US', { style: 'currency', currency: 'USD' }).format(price);
+};
+
 const Shop = () => {
     const { addToCart } = MyAppContext();
     let goTo = useNavigate();
@@ -33,7 +37,6 @@ const Shop = () => {
         });
     };
 
-    // Filter data based on selected criteria
     const filteredData = data.filter(item => {
         const matchesFilter = selectedFilter ? item.type.toLowerCase() === selectedFilter.toLowerCase() : true;
         const matchesColor = selectedColors.length > 0 ? selectedColors.includes(item.color.toLowerCase()) : true;
@@ -146,7 +149,7 @@ const Shop = () => {
                                     </div>
                                     <div className='pt-5'>
                                         <p onClick={() => goTo(`/shop/${e.id}`)} className='text-[#555] pb-2 transition duration-500 hover:text-[#e65540] cursor-pointer'>{e.name}</p>
-                                        <p className='text-[#555] pb-2'>{e.price}</p>
+                                        <p className='text-[#555] pb-2'>{formatPrice(e.price)}</p> {/* Format price here */}
                                     </div>
                                 </div>
                             ))

@@ -7,6 +7,10 @@ import data from "../../json/data.json";
 import { Images } from '../../constant';
 import { MyAppContext } from '../../context'; // Import your context or state management
 
+const formatPrice = (price) => {
+  return new Intl.NumberFormat('en-US', { style: 'currency', currency: 'USD' }).format(price);
+};
+
 const DetShop = () => {
     const { id } = useParams();
     const products = data.find(item => item.id == id);
@@ -45,7 +49,7 @@ const DetShop = () => {
                     <div><img src={Images[products.images]} alt="" className='w-[30vw]' /></div>
                     <div className='flex flex-col gap-6'>
                         <p className="text-black text-3xl opacity-70 hover:text-red-600">{products.title}</p>
-                        <p className="text-black text-3xl opacity-70 hover:text-red-600">{products.price}</p>
+                        <p className="text-black text-3xl opacity-70 hover:text-red-600">{formatPrice(products.price)}</p> {/* Format price here */}
                         <p className='text-md opacity-65 w-[35vw]'>{products.name}</p>
                         <div className='flex gap-4 pt-5'>
                             <button className='border border-red-600 px-5 py-2 focus:bg-red-600 focus:text-white'>S</button>
@@ -94,7 +98,7 @@ const DetShop = () => {
                                         </button>
                                     </div>
                                     <p className="text-black pt-6 text-lg opacity-70 hover:text-red-600">{item.title}</p>
-                                    <p className="text-black text-lg opacity-70">{item.price}</p>
+                                    <p className="text-black text-lg opacity-70">{formatPrice(item.price)}</p> {/* Format price here */}
                                 </div>
                             ))}
                         </div>
@@ -113,7 +117,7 @@ const DetShop = () => {
                                         </button>
                                     </div>
                                     <p className="text-black pt-6 text-lg opacity-70">{item.name}</p>
-                                    <p className="text-black text-lg opacity-70">{item.price}</p>
+                                    <p className="text-black text-lg opacity-70">{formatPrice(item.price)}</p> {/* Format price here */}
                                 </div>
                             ))}
                         </div>
