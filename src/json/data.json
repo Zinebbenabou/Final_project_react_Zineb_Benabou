@@ -1,0 +1,101 @@
+[
+    {
+      "name": "Boxy T-Shirt with Roll Sleeve Detail",
+      "price": 20.00,
+      "images": "shop1",
+      "description": "A comfortable boxy t-shirt with stylish roll sleeve details, perfect for casual wear.",
+      "sizes": ["S", "M", "L", "XL"],
+      "quantity": 1,
+      "brand": "MyVendor",
+      "categories": ["boxy", "Shirts", "sleeveless"],
+      "additional_info": "Made from 100% cotton for softness and breathability.",
+      "reviews": []
+    },
+    {
+      "name": "Classic Polo Shirt",
+      "price": 25.00,
+      "images": "shop2",
+      "description": "A timeless polo shirt, perfect for both formal and casual occasions.",
+      "sizes": ["S", "M", "L", "XL"],
+      "quantity": 1,
+      "brand": "TopStyle",
+      "categories": ["polo", "Shirts", "short-sleeve"],
+      "additional_info": "Made with premium fabric for durability.",
+      "reviews": []
+    },
+    {
+      "name": "V-Neck Cotton Tee",
+      "price": 15.00,
+      "images": "shop3",
+      "description": "A lightweight V-neck tee, ideal for layering or wearing on its own.",
+      "sizes": ["S", "M", "L"],
+      "quantity": 1,
+      "brand": "UrbanWear",
+      "categories": ["v-neck", "Shirts", "casual"],
+      "additional_info": "Available in multiple colors for everyday wear.",
+      "reviews": []
+    },
+    {
+      "name": "Denim Jacket",
+      "price": 45.00,
+      "images": "shop4",
+      "description": "A classic denim jacket with a modern fit, perfect for layering.",
+      "sizes": ["M", "L", "XL"],
+      "quantity": 1,
+      "brand": "DenimCo",
+      "categories": ["jackets", "denim"],
+      "additional_info": "Crafted with durable denim fabric for a long-lasting fit.",
+      "reviews": []
+    },
+    {
+      "name": "Sleeveless Hoodie",
+      "price": 30.00,
+      "images": "shop5",
+      "description": "A trendy sleeveless hoodie, perfect for workouts or casual outings.",
+      "sizes": ["S", "M", "L", "XL"],
+      "quantity": 1,
+      "brand": "ActiveWear",
+      "categories": ["hoodies", "sleeveless"],
+      "additional_info": "Designed with moisture-wicking fabric to keep you cool.",
+      "reviews": []
+    },
+    {
+      "name": "Linen Button-Up Shirt",
+      "price": 35.00,
+      "images": "shop6",
+      "description": "A breathable linen shirt with a button-up front, great for warm weather.",
+      "sizes": ["S", "M", "L", "XL"],
+      "quantity": 1,
+      "brand": "EcoCloth",
+      "categories": ["linen", "Shirts", "long-sleeve"],
+      "additional_info": "Eco-friendly linen material for sustainability.",
+      "reviews": []
+    },
+    {
+      "name": "Graphic Print Tee",
+      "price": 18.00,
+      "images": "shop7",
+      "description": "A fun graphic print tee, ideal for making a style statement.",
+      "sizes": ["S", "M", "L", "XL"],
+      "quantity": 1,
+      "brand": "StreetStyle",
+      "categories": ["graphic", "Shirts", "casual"],
+      "additional_info": "Features high-quality print that lasts.",
+      "reviews": []
+    },
+   
+    {
+      "name": "Graphic Print Tee",
+      "price": 18.00,
+      "images": "shop8",
+      "description": "A fun graphic print tee, ideal for making a style statement.",
+      "sizes": ["S", "M", "L", "XL"],
+      "quantity": 1,
+      "brand": "StreetStyle",
+      "categories": ["graphic", "Shirts", "casual"],
+      "additional_info": "Features high-quality print that lasts.",
+      "reviews": []
+    }
+   
+  ]
+  
