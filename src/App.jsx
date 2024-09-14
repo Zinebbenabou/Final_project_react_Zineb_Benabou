@@ -11,6 +11,8 @@ import Contact from "./pages/contact/contact";
 import BlogPage from "./pages/blog/blogMain";
 import ShopPage from "./pages/shop/shopPage";
 import Login from "./pages/authentication/singUp";
+import DetShop from "./pages/shop/detShop";
+import Cart from "./pages/bascket/bascket";
 
 function App() {
   return (
@@ -22,9 +24,11 @@ function App() {
       <Route path="/login" element={<Login/>} />
       <Route path="/register" element={<Register/>} />
       <Route path="/shop" element={<ShopPage/>} />
+      <Route path="/shop/:id" element={<DetShop/>} />
       <Route path="/about" element={<AboutPage/>} />
       <Route path="/contact" element={<Contact/>} />
       <Route path="/blog" element={<BlogPage/>} />
+      <Route path = "/cart" element = {<Cart/>}/>
     </Routes>
     <Footer/>
     </MyProvider>

@@ -125,7 +125,7 @@ const Register = () => {
           </button>
           <p className="text-gray-600">
             or
-            <span className="text-lg text-gray-600 hover:text-[#e65540]">
+            <span onClick={()=>navigate("/")} className="text-lg text-gray-600 hover:text-[#e65540] cursor-pointer">
               Return to Store
             </span>
           </p>

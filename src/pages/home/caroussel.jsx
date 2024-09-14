@@ -5,7 +5,9 @@ import { Pagination, Navigation } from 'swiper/modules';
 import images from "../../constant/images"
 import { Images } from "../../constant";
 const Carousel1 = () => {
+ 
   return (
+
     <>
       <Swiper
         slidesPerView={1}
